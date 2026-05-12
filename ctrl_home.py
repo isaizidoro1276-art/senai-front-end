@@ -19,10 +19,25 @@ def index(): # função que gerencia rota
 
     return render_template("dashboard/index.html") # Renderiza um template
 
-@bp.route("/dashboard")  # cria uma rota
+
+@bp.route("/dashboard")  # cria uma rota para navegador http://127.0.0.1:5000/dashboard
 def dashboard(): # função que gerencia rota
     """ Painel de Vendas """
-    # if 'user' not in session:
-    #      return redirect(url_for("auth.login"))
+    # remova o login
+    vendas: list =  [
+         {"mes": "Janeiro", "valor total": 139519.19},
+         {"mes": "Fevereiro", "valor total": 139129.19},
+         {"mes": "Março", "valor total": 139519.89},
+         {"mes": "Abril", "valor total": 789519.19},
+         {"mes": "Maio", "valor total": 139519.32},
+         {"mes": "Junho", "valor total": 975319.19},
+         {"mes": "Julho", "valor total": 705519.19},
+         {"mes": "Agosto", "valor total": 139539.19},
+         {"mes": "Setembro", "valor total": 135019.19},
+         {"mes": "Outubro", "valor total": 165519.19},
+        {"mes": "Novembro", "valor total": 139009.19},
+         {"mes": "Dezembro", "valor total": 132219.19},
 
-    return render_template("dashboard/index.html", title="Painel de Vendas")  # Renderiza um template
+    ] # fim da lista de vendas
+    return render_template("dashboard/index.html", title="Painel de Vendas", vendas=vendas)  # Renderiza um template
+    
