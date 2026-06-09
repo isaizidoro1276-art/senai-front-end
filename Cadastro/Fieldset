@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cadastro Completo</title>
+
+<style>
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    padding:30px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+fieldset{
+    margin-bottom:20px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+legend{
+    font-weight:bold;
+    color:#ff758f;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    padding:12px 20px;
+    background:#ff8fa3;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+
+<fieldset>
+
+<legend>Informações Pessoais</legend>
+
+<label>Nome</label>
+<input type="text">
+
+<label>Telefone</label>
+<input type="tel">
+
+<label>E-mail</label>
+<input type="email">
+
+</fieldset>
+
+<fieldset>
+
+<legend>Endereço</legend>
+
+<label>Rua</label>
+<input type="text">
+
+<label>Número</label>
+<input type="text">
+
+<label>Cidade</label>
+<input type="text">
+
+<label>Estado</label>
+<input type="text">
+
+</fieldset>
+
+<button type="submit">Salvar Cadastro</button>
+
+</form>
+
+</body>
+</html>
