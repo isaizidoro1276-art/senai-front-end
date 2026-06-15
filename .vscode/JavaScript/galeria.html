@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Galeria</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    text-align:center;
+}
+
+img{
+    width:250px;
+    margin:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.ampliada{
+    transform:scale(1.5);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Galeria</h1>
+
+<img src="hamburguer1.jpg" onclick="ampliar(this)">
+<img src="hamburguer2.jpeg" onclick="ampliar(this)">
+<img src="hamburguer3.webp" onclick="ampliar(this)">
+
+<script>
+
+function ampliar(img){
+
+    img.classList.toggle("ampliada");
+
+}
+
+</script>
+
+</body>
+</html>
