@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contador de Cliques</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    text-align:center;
+    margin-top:100px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#ff8fa3;
+    color:white;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Contador de Cliques</h1>
+
+<p id="contador">Cliques: 0</p>
+
+<button onclick="contar()">
+Clique Aqui
+</button>
+
+<script>
+
+let cliques = 0;
+
+function contar(){
+    cliques++;
+    document.getElementById("contador").innerText =
+    "Cliques: " + cliques;
+}
+
+</script>
+
+</body>
+</html>
