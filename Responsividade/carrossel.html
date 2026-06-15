@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Carrossel CSS</title>
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.slider{
+    width:400px;
+    overflow:hidden;
+}
+
+.slides{
+    display:flex;
+    animation:slide 9s infinite;
+}
+
+.slides img{
+    width:400px;
+}
+
+@keyframes slide{
+
+0%{
+transform:translateX(0);
+}
+
+33%{
+transform:translateX(-400px);
+}
+
+66%{
+transform:translateX(-800px);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="slider">
+
+<div class="slides">
+<body>
+
+<h1>Teste</h1>
+
+<img src="hamburguer1.jpg" width="300">
+<br><br>
+
+<img src="hamburguer2.jpeg" width="300">
+<br><br>
+
+<img src="hamburguer3.webp" width="300">
+
+</body>
+</div>
+
+</div>
+
+</body>
+</html>
