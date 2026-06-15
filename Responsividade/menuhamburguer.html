@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Responsivo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#ff8fa3;
+}
+
+ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+li{
+    padding:20px;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+    <li>Início</li>
+    <li>Produtos</li>
+    <li>Serviços</li>
+    <li>Contato</li>
+</ul>
+
+</nav>
+
+</body>
+</html>
